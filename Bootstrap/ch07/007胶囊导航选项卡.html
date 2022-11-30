@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.14.6/umd/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body class="container">
+    <div>
+        <h4 class="mb-4">东华理工大学</h4>
+        <div class="row">
+            <div class="col-4">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#head">首页</a>
+                    </li>
+                    <li class="nav-item dropright">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#gk">学校概况</a>
+                        <div class="dropdown-menu">
+                            <button class="dropdown-item">学校简介</button>
+                            <button class="dropdown-item">现任领导</button>
+                            <button class="dropdown-item">历任领导</button>
+                            <button class="dropdown-item">信息公开</button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#jg">机构设置</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#yx">院系设置</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <div class="tab-content">
+                    <div class="tab-pane" id="head">首页内容</div>
+                    <div class="tab-pane" id="jg">机构设置内容</div>
+                    <div class="tab-pane" id="yx">院系设置内容</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

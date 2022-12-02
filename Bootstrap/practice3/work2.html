@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work2</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.14.6/umd/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style>
+        .dropdown-item.active, .dropdown-item:active {
+            color: #000;
+            text-decoration: none;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <!--     带折叠功能的nav导航 ：在中屏以下，导航栏的内容会折叠，且出现折叠按钮，单击折叠按钮可以显示或隐藏导航栏-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand d-none d-lg-block" href="#">教务处</a>
+        <a class="navbar-brand d-block d-lg-none" href="#">教务</a>
+        <button class="navbar-toggler" data-target="#colla" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="colla">
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">教学组织</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#notice">通知公告</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">常用下载</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-item active">实践教学</div>
+                            <div class="dropdown-item">教学质量</div>
+                            <div class="dropdown-item">教学运行</div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#time">教学周历</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form-inline">
+                <input type="text" class="form-control mr-sm-2" placeholder="用户名">
+                <input type="password" class="form-control mr-sm-2" placeholder="密码">
+                <button class="btn btn-light">登录</button>
+            </form>
+        </div>
+    </nav>
+</body>
+
+</html>

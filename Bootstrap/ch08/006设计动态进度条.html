@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>006设计动态进度条</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <style>
+            .load-bar {
+                border-radius: 12px;
+                position: relative;
+            }
+            .progress-bar-striped {
+                width: 0%;
+                border-radius: inherit;
+                position: relative;
+                animation: loader 15s linear infinite;
+            }
+            @keyframes loader {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body class="container">
+        <h3 class="mb-4">动态进度条</h3>
+        <div class="progress load-bar my-5" style="height:25px;">
+            <div class="progress-bar progress-bar-striped text-center">
+                <span id="counter"></span>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(function() {
+            var interval = setInterval(increment, 150)
+            var current = 0
+            function increment() {
+                current++
+                $('#counter').html(current+'%')
+                if(current == 100) {
+                    current = 0
+                }
+            }
+        })
+    </script>
+</html>
